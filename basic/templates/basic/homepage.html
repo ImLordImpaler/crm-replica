@@ -1,0 +1,182 @@
+{% extends 'basic/base.html' %}
+
+
+{% block content %}
+
+    <div class='container-fluid' style="border-left:1px solid black; b">
+    <div class='row mt-5'>
+    
+                                <div class=" mb-4 col-sm-3">
+                                    <a class="card bg-primary text-white shadow" href="">
+                                        <div class="card-body" style="background-color: #254C77;">
+                                            New Appointment
+                                            
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="mb-4 col-sm-3">
+                                    <a class="card bg-success text-white shadow" href="">
+                                        <div class="card-body">
+                                            New Enquiry
+                                           
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="mb-4 col-sm-3">
+                                    <a class="card bg-info text-white shadow" href="">
+                                        <div class="card-body">
+                                            New Bill?
+                                            
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="mb-4 col-sm-3">
+                                    <a class="card bg-warning text-white shadow" href="">
+                                        <div class="card-body">
+                                            New Client?
+                                            
+                                        </div>
+                                    </a>
+                                </div>
+                                
+    </div>
+        <div class="row mt-5">
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                               Total beauticians</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">12</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-success shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                                Revenue</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800"> Rs.23,000</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-info shadow h-100 py-2">
+                               <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                      
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1 hoverclass">Total Clients
+                                            </div>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800 hoverclass">23</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-clipboard-list fa-2x text-gray-300 hoverclass"></i>
+                                        </div>
+                                      </div>
+                                  
+                                </div>
+                            </div>
+                        </div>
+                          <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-info shadow h-100 py-2">
+                               <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                      
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1 hoverclass">Total Clients
+                                            </div>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800 hoverclass">12</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-clipboard-list fa-2x text-gray-300 hoverclass"></i>
+                                        </div>
+                                      </div>
+                                  
+                                </div>
+                            </div>
+                        </div>
+        </div>
+         <div class='row mt-4'>
+        
+          <div class='col-sm-6  border-right' >
+              <div class="card  card-tasks">
+              <div class="card-header ">
+                
+                <h4 class="card-title">Your Appointments</h4>
+              </div>
+
+              <div class="card-body d-flex justify-content-left my-4">
+                
+                <div class="card" style="width: 22rem;">
+                <img class="card-img-top" src="https://wpcom.files.wordpress.com/2018/07/sw-531542.jpg?w=888" alt="Card image cap">
+                <div class="card-body border" style="background-color: #EBECF1; ">
+                  <a href="{% url 'calendarapp:calendar' %}" class='btn btn-round btn-primary btn-lg'>Calander  <i class="fas fa-arrow-circle-right"></i> </a>
+                </div>
+              </div>
+              </div>
+             
+            </div>
+
+          </div>
+          <div class='col-sm-6'>
+           <div class="card  card-tasks" style="min-height: 30rem;">
+              <div class="card-header ">
+                
+                <h4 class="card-title">Quick Access</h4>
+              </div>
+
+              <div class="card-body  my-4">
+                
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item">
+                      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Low Product</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Enquiry Followup</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Today BirthDays</a>
+                  </li>
+                  
+                </ul>
+                <div class="tab-content">
+                <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">{%</div>
+                <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
+                <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab"> </div>
+                
+                </div>
+              </div>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock content %}
