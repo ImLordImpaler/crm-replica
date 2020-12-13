@@ -54,9 +54,7 @@ def followup(request):
         'cli': cli    }
     return render(request , 'basic/followup/followupBase.html' , params)
 
-@login_required(login_url='loginPage')
-def cover(request):
-    return render(request , 'basic/cover.html')
+
 
 def loginPage(request):
     if request.method == 'POST':
@@ -103,7 +101,7 @@ def profilePage(request):
 def logoutPage(request):
     logout(request)
     return redirect('loginPage')
-    
+@login_required(login_url='loginPage')
 def cover(request):
     return render(request , 'basic/cover.html')
 def home(request):
