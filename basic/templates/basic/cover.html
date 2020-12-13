@@ -1,0 +1,85 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <title>SalonSolutions</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/cover/">
+
+    <!-- Bootstrap core CSS -->
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      html,
+body {
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1505051508008-923feaf90180?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max);
+}
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/cover.css' %}" rel="stylesheet">
+  </head>
+  <body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <h3 class="masthead-brand covs">SalonSolutions</h3>
+      <nav class="nav nav-masthead justify-content-center">
+        <a class="nav-link active covs" href="#">Dashboard</a>
+        <a class="nav-link covs" href="#">Pricing</a>
+        <a class="nav-link covs" href="#">Contact us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main role="main" class="inner cover"  >
+    <h1 class="cover-heading covs mb-2">Amir Bhai ki kati hui lulli</h1>
+    <p class="lead covs mt-5">Kuch aur attractive si subheading. Jaise tune bola, something to make us look cheapest and finiest looooking solution</p>
+    <p class="lead">
+      
+    </p>
+     
+    <ul class="nav justify-content-center mt-5" >
+  <li class="nav-item mx-2" >
+    <a href="{% url 'dashboard' %}" class="btn btn-lg btn-primary covs">Dashboard</a>
+  </li>
+  <li class="nav-item  mx-2" >
+    <a href="{% url 'serviceSlip' %}" class="btn btn-lg btn-warning covs">Billing</a>
+  </li>
+  <li class="nav-item  mx-2" >
+    <a href="{% url 'stock' %}" class ="btn btn-lg btn-success covs">Inventory</a>
+  </li>
+  
+</ul>
+
+     </main>
+  
+   
+
+  <footer class="mastfoot mt-auto">
+    <div class="inner">
+      <p>Cover template for <a href="https://getbootstrap.com/">Approval</a>, by <a href="https://twitter.com/mdo">@rachitsaxena</a>.</p>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
